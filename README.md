@@ -112,6 +112,7 @@ The system was built from scratch using libraries covered in the course, and mee
   <img align="left" alt="Flask" title="Flask" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
   <img align="left" alt="NLTK" title="NLTK" width="30px" src="1_YM2HXc7f4v02pZBEO8h-qw.png"/>
 
+<img align="left" alt="Flask" title="Flask" width="40px" src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/flask.svg"/>
 
 
 
