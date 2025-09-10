@@ -111,7 +111,8 @@ The system was built from scratch using libraries covered in the course, and mee
   <img align="left" alt="Flask" title="Flask" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
   <img align="left" alt="spaCy" title="spaCy" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/SpaCy_logo.svg/512px-SpaCy_logo.svg.png"/>
   <img align="left" alt="NLTK" title="NLTK" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/NLTK_logo.png/320px-NLTK_logo.png"/>
-  <img alt="NLTK" title="NLTK" width="120px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/NLTK_logo.png/320px-NLTK_logo.png"/>
+  <img alt="NLTK" title="NLTK" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/NLTK_logo.png/320px-NLTK_logo.png"/>
+
 </p>
 
 <br clear="all"/>
