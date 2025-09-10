@@ -73,20 +73,22 @@ The system was built from scratch using libraries covered in the course, and mee
 ## 🚀 Execução / Execution
 
 **PT:**  
-1. Instale as dependências com `pip install -r requirements.txt`  
-2. Execute o script principal com `python assistant.py`  
-3. Interaja com o assistente digitando comandos em linguagem natural  
-4. Receba respostas e veja ações sendo executadas  
-5. Envie feedback para melhorar o desempenho do sistema  
-6. Acompanhe logs e métricas de uso
+1. Instale as dependências com `npm install` e `pip install -r requirements.txt`  
+2. Configure o banco PostgreSQL e variáveis no `.env`  
+3. Execute o backend com `python app.py` ou via Docker  
+4. Execute o frontend com `npm start`  
+5. Interaja com o assistente digitando comandos em linguagem natural  
+6. Envie feedback para melhorar o desempenho do sistema  
+7. Rode testes automatizados com Cypress
 
 **EN:**  
-1. Install dependencies with `pip install -r requirements.txt`  
-2. Run the main script using `python assistant.py`  
-3. Interact with the assistant by typing natural language commands  
-4. Receive responses and watch actions being executed  
-5. Submit feedback to improve system performance  
-6. Monitor logs and usage metrics
+1. Install dependencies with `npm install` and `pip install -r requirements.txt`  
+2. Configure PostgreSQL and environment variables in `.env`  
+3. Run backend using `python app.py` or via Docker  
+4. Run frontend using `npm start`  
+5. Interact with the assistant by typing natural language commands  
+6. Submit feedback to improve system performance  
+7. Run automated tests with Cypress
 
 ---
 
@@ -99,11 +101,16 @@ The system was built from scratch using libraries covered in the course, and mee
 ## 🧰 Tecnologias / Technologies
 
 <p>
+  <img align="left" alt="React" title="React" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
+  <img align="left" alt="Node.js" title="Node.js" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
   <img align="left" alt="Python" title="Python" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
-  <img align="left" alt="NLTK" title="NLTK" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/NLTK_logo.png/320px-NLTK_logo.png"/>
-  <img align="left" alt="spaCy" title="spaCy" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/SpaCy_logo.svg/512px-SpaCy_logo.svg.png"/>
+  <img align="left" alt="Tailwind CSS" title="Tailwind CSS" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain.svg"/>
+  <img align="left" alt="PostgreSQL" title="PostgreSQL" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
+  <img align="left" alt="Docker" title="Docker" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"/>
+  <img align="left" alt="Cypress" title="Cypress" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypress/cypress-original.svg"/>
   <img align="left" alt="Flask" title="Flask" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
-  <img align="left" alt="Scikit-learn" title="Scikit-learn" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"/>
+  <img align="left" alt="spaCy" title="spaCy" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/SpaCy_logo.svg/512px-SpaCy_logo.svg.png"/>
+  <img align="left" alt="NLTK" title="NLTK" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/NLTK_logo.png/320px-NLTK_logo.png"/>
 </p>
 
 <br clear="all"/>
@@ -126,7 +133,8 @@ This project is under the MIT license. For more details, see the `LICENSE` file.
 ## 🏁 Conclusão / Conclusion
 
 **PT:**  
-Este sistema de assistência virtual representa uma aplicação prática e escalável de PLN, com potencial para evoluir em interfaces conversacionais mais complexas, como chatbots, agentes de suporte ou assistentes pessoais.
+Este sistema de assistência virtual representa uma aplicação prática e escalável de PLN, com potencial para evoluir em interfaces conversacionais mais complexas, como chatbots, agentes de suporte ou assistentes pessoais. A arquitetura moderna com React, Node.js, IA e PostgreSQL garante flexibilidade e performance.
 
 **EN:**  
-This virtual assistant system represents a practical and scalable application of NLP, with potential to evolve into more complex conversational interfaces such as chatbots, support agents, or personal assistants.
+This virtual assistant system represents a practical and scalable application of NLP, with potential to evolve into more complex conversational interfaces such as chatbots, support agents, or personal assistants. The modern architecture using React, Node.js, AI, and PostgreSQL ensures flexibility and performance.
+
