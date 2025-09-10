@@ -107,16 +107,12 @@ The system was built from scratch using libraries covered in the course, and mee
   <img align="left" alt="Tailwind CSS" title="Tailwind CSS" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"/>
   <img align="left" alt="PostgreSQL" title="PostgreSQL" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
   <img align="left" alt="Docker" title="Docker" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"/>
+   <img align="left" alt="spaCy" title="spaCy" width="30px" src="https://raw.githubusercontent.com/explosion/spaCy/master/website/src/images/logo.svg"/>
   <img align="left" alt="Cypress" title="Cypress" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypress/cypress-original.svg"/>
   <img align="left" alt="Flask" title="Flask" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
 
   <img align="left" alt="NLTK" title="NLTK" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/NLTK_logo.png/320px-NLTK_logo.png"/>
-
-  <img align="left" alt="spaCy" title="spaCy" width="30px" src="https://raw.githubusercontent.com/explosion/spaCy/master/website/src/images/logo.svg"/>
-  <img align="left" alt="NLTK" title="NLTK" width="30px" src="https://www.nltk.org/images/nltk-logo.png"/>
-
-
-
+  
 </p>
 
 <br clear="all"/>
