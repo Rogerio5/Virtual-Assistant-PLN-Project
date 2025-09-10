@@ -112,14 +112,21 @@ The system was built from scratch using libraries covered in the course, and mee
   <img align="left" alt="Flask" title="Flask" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
   <img align="left" alt="NLTK" title="NLTK" width="30px" src="1_YM2HXc7f4v02pZBEO8h-qw.png"/>
 
+<!-- Estilo opcional para espaçamento -->
+<style>
+  .tech-logo {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+</style>
 
-<!-- Flask (SVG, fundo transparente, oficial) -->
-<img align="left" alt="Flask" title="Flask" width="30px"
+<!-- Logos com fundo transparente e boa qualidade -->
+<img class="tech-logo" alt="Flask" title="Flask" width="30px"
      src="https://raw.githubusercontent.com/pallets/flask/main/artwork/logo.svg"/>
 
-<!-- NLTK (PNG oficial) -->
-<img class="nltk-no-white" align="left" alt="NLTK" title="NLTK" width="30px"
+<img class="tech-logo" alt="NLTK" title="NLTK" width="30px"
      src="https://www.nltk.org/images/nltk-logo.png"/>
+
 
 
 
