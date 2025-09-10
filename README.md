@@ -111,12 +111,11 @@ The system was built from scratch using libraries covered in the course, and mee
   <img align="left" alt="Flask" title="Flask" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
   <img align="left" alt="spaCy" title="spaCy" width="30px" src="assets/spacy-logo.png"/>
   <img align="left" alt="NLTK" title="NLTK" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/NLTK_logo.png/320px-NLTK_logo.png"/>
-  
 
-  <img align="left" alt="Python" title="Python" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
-  <img align="left" alt="React" title="React" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
-  <img align="left" alt="Docker" title="Docker" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"/>
-  <img align="left" alt="Linux" title="Linux" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"/>
+  <img align="left" alt="Cypress" title="Cypress" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypress/cypress-original.svg"/>
+<img align="left" alt="Flask" title="Flask" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
+<img align="left" alt="spaCy" title="spaCy" width="30px" src="https://raw.githubusercontent.com/explosion/spacy-brand/master/logo/icon.png"/>
+<img align="left" alt="NLTK" title="NLTK" width="30px" src="https://www.nltk.org/images/nltk-logo.png"/>
 
 
 </p>
