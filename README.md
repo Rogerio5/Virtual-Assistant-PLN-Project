@@ -2,6 +2,8 @@
 
 ## 🧠 Sistema de Assistência Virtual com Processamento de Linguagem Natural (PLN)
 
+Projeto em Construção !!
+
 ![Capa do Projeto - Assistente Virtual](assistente-virtual-capa.png)
 
 ---
