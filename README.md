@@ -242,6 +242,8 @@ Isso garante validação automática e evita erros silenciosos.
 
 ### 👨‍💻 Desenvolvedor / Developer
 
+- [Rogerio](https://github.com/Rogerio5)
+- [Ronaldo](https://github.com/Ronaldo94-GITHUB)
 
 ---
 
