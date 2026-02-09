@@ -71,3 +71,4 @@ build/
 *.egg
 pip-wheel-metadata/
 cookies.txt
+venv312/
