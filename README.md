@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ⚙️ Configuração do backend/config.py
 
 Este projeto usa **FastAPI + Pydantic v2 + pydantic-settings** para carregar variáveis de ambiente do arquivo `.env`.  
@@ -121,7 +121,7 @@ SMTP: SMTP_EMAIL, SMTP_PASSWORD, etc.
 Segurança: JWT_ALGORITHM, SENDGRID_API_KEY, AWS_SECRET_ACCESS_KEY, etc.
 
 Isso garante validação automática e evita erros silenciosos.
-=======
+
 # 🤖 Virtual Assistant System — Repositório: Virtual-Assistant-PLN-Project
 
 ## 🧠 Sistema de Assistência Virtual com Processamento de Linguagem Natural (PLN)
@@ -263,4 +263,4 @@ Este sistema de assistência virtual representa uma aplicação prática e escal
 **EN:**  
 This virtual assistant system represents a practical and scalable application of NLP, with potential to evolve into more complex conversational interfaces such as chatbots, support agents, or personal assistants. The modern architecture using React, Node.js, AI, and PostgreSQL ensures flexibility and performance.
 
->>>>>>> origin/main
+
