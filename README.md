@@ -4,7 +4,7 @@
 
 Projeto em Construção !!
 
-![Capa do Projeto - Assistente Virtual](assistente-virtual.png)
+![Capa do Projeto - Assistente Virtual](assistente-virtual1.png)
 
 ---
 
