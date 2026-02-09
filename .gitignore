@@ -72,3 +72,4 @@ build/
 pip-wheel-metadata/
 cookies.txt
 venv312/
+js2py-py312-fix/
