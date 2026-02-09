@@ -1,0 +1,15 @@
+# docker/Dockerfile.frontend
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Instalar dependências de build (se necessário)
+COPY ./frontend/package.json ./frontend/package-lock.json* /app/
+RUN npm ci --silent
+
+# Copiar código (em dev será sobrescrito pelo volume)
+COPY ./frontend /app
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

@@ -1,0 +1,45 @@
+/* Reset simples e layout base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #0f1724;
+  color: #e6eef8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout principal usado pelo App */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Painéis (opcionais, App pode usar seu próprio layout) */
+.left-panel,
+.center-panel,
+.right-panel {
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Responsividade simples */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+    padding: 12px;
+  }
+}

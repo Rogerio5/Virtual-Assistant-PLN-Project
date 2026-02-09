@@ -1,0 +1,35 @@
+# docker/Dockerfile.backend
+FROM python:3.11-slim
+
+# Instalar dependências do sistema (ffmpeg, build tools)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg \
+    build-essential \
+    git \
+    curl \
+    libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copiar requirements e instalar (use o requirements.txt montado em dev ou copiado em prod)
+COPY requirements.txt /app/requirements.txt
+RUN python -m pip install --upgrade pip setuptools wheel \
+    && pip install -r /app/requirements.txt
+
+# Copiar código da aplicação (em dev você monta via volume; em prod a imagem já contém o código)
+COPY ./backend /app/backend
+COPY ./database /app/database
+
+# Crie usuário não-root para segurança
+RUN useradd --create-home appuser
+USER appuser
+
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Porta exposta
+EXPOSE 8000
+
+# Entrypoint padrão (override no docker-compose para dev com --reload)
+CMD ["uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8000"]

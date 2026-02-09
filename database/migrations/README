@@ -1,0 +1,29 @@
+Generic single-database configuration.
+
+# 📦 Database Setup
+
+## Criar schema inicial
+```bash
+psql -U postgres -d assistant_db -f database/schema.sql
+```
+
+### Popular com dados de exemplo
+```
+psql -U postgres -d assistant_db -f database/seed.sql
+```
+
+## Usar Alembic
+```
+alembic revision --autogenerate -m "create feedbacks table"
+alembic upgrade head
+```
+
+---
+
+👉 Assim, sua pasta **database/** fica completa:  
+- `session.py` (engine + sessão).  
+- `models/feedback_model.py` (modelo).  
+- `schema.sql` (DDL inicial).  
+- `seed.sql` (dados de exemplo).  
+- `migrations/` (Alembic).  
+- `README` (guia).  
