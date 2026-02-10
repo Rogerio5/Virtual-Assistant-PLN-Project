@@ -18,17 +18,36 @@ Projeto em Construção !!
 
 ---
 
-## 📋 Índice / Table of Contents
+## 📋 Índice / Table of Contents (completo)
 
 - [📖 Descrição / Description](#-descrição--description)  
 - [⚙️ Funcionalidades / Features](#-funcionalidades--features)  
 - [🚀 Execução / Execution](#-execução--execution)  
 - [🌐 Acesso / Access](#-acesso--access)  
 - [🧰 Tecnologias / Technologies](#-tecnologias--technologies)  
+- [📊 Diagrama ASCII da Arquitetura](#-diagrama-ascii-da-arquitetura)  
+- [🔄 Fluxo de Requisição](#-fluxo-de-requisição)  
+- [🏗️ Arquitetura do sistema](#-arquitetura-do-sistema)  
 - [⚙️ Configuração do backend/config.py](#-configuração-do-backendconfigpy)  
 - [👨‍💻 Desenvolvedor / Developer](#-desenvolvedor--developer)  
 - [📜 Licença / License](#-licença--license)  
 - [🏁 Conclusão / Conclusion](#-conclusão--conclusion)
+
+---
+
+## 📋 Índice / Table of Contents (reduzido)
+
+- [📖 Descrição / Description](#-descrição--description)  
+- [⚙️ Funcionalidades / Features](#-funcionalidades--features)  
+- [🚀 Execução / Execution](#-execução--execution)  
+- [🌐 Acesso / Access](#-acesso--access)  
+- [🧰 Tecnologias / Technologies](#-tecnologias--technologies)  
+- [📊 Diagrama ASCII da Arquitetura](#-diagrama-ascii-da-arquitetura)  
+- [🔄 Fluxo de Requisição](#-fluxo-de-requisição)  
+- [⚙️ Configuração do backend/config.py](#-configuração-do-backendconfigpy)  
+- [👨‍💻 Desenvolvedor / Developer](#-desenvolvedor--developer)  
+- [📜 Licença / License](#-licença--license)
+
 
 ---
 
@@ -116,6 +135,129 @@ The system was built from scratch using libraries covered in the course, and mee
 </p>
 
 <br clear="all"/>
+
+---
+
+## 📊 Diagrama ASCII da Arquitetura
+
++-------------------+        +-------------------+        +-------------------+
+|                   |        |                   |        |                   |
+|   Frontend        | -----> |   Backend         | -----> |   Banco de Dados  |
+|   (React / Vite)  |        |   (FastAPI)       |        |   (PostgreSQL)    |
+|                   |        |                   |        |                   |
++-------------------+        +-------------------+        +-------------------+
+        |                                                        ^
+        |                                                        |
+        v                                                        |
++-------------------+                                            |
+|                   |                                            |
+|   Dashboard       | -------------------------------------------+
+|   (Streamlit)     |
+|                   |
++-------------------+
+
+Fluxo:
+1. Usuário interage via Frontend (texto ou áudio).
+2. Backend processa entrada (NLP, Whisper, TTS, comandos).
+3. Feedbacks e dados são persistidos no Banco de Dados.
+4. Dashboard consome dados do Banco e gera relatórios interativos.
+
+---
+
+## 🔄 Fluxo de Requisição
+
+Usuário (Texto/Áudio)
+        |
+        v
++-------------------+
+|   Frontend React  |
+|   (UI / Browser)  |
++-------------------+
+        |
+        v
++-------------------+
+|   Backend FastAPI |
+|   Endpoints:      |
+|   - /assistant    |
+|   - /feedback     |
+|   - /auth         |
++-------------------+
+        |
+        +-----------------------------+
+        |                             |
+        v                             v
++-------------------+        +-------------------+
+| Speech-to-Text    |        | NLP Pipeline      |
+| (Whisper)         |        | (Intents/Entities)|
++-------------------+        +-------------------+
+        |                             |
+        v                             v
++-------------------+        +-------------------+
+| ChatGPT (opcional)|        | Command Executor  |
++-------------------+        +-------------------+
+        |
+        v
++-------------------+
+| Text-to-Speech    |
+| (gTTS / pyttsx3)  |
++-------------------+
+        |
+        v
+Resposta (Texto + Áudio)
+        |
+        v
++-------------------+
+|   Frontend React  |
+|   Exibe resposta  |
+|   Reproduz áudio  |
++-------------------+
+
+Feedbacks → Banco de Dados (PostgreSQL) → Dashboard (Streamlit)
+
+# 📝 Fluxo de Feedbacks
+
+Usuário envia feedback (mensagem + rating)
+        |
+        v
++-------------------+
+|   Frontend React  |
+|   Formulário UI   |
++-------------------+
+        |
+        v
++-------------------+
+|   Backend FastAPI |
+|   Endpoint:       |
+|   - /feedback     |
++-------------------+
+        |
+        v
++-------------------+
+| Feedback Manager  |
+| - Salva no banco  |
+| - Ou fallback     |
+|   em arquivo JSON |
++-------------------+
+        |
+        v
++-------------------+
+| Banco de Dados    |
+| (PostgreSQL)      |
++-------------------+
+        |
+        v
++-------------------+
+| Dashboard         |
+| (Streamlit)       |
+| - Relatórios PDF  |
+| - Visualizações   |
++-------------------+
+
+Fluxo:
+1. Usuário envia feedback via frontend.
+2. Backend recebe e valida entrada.
+3. Feedback Manager salva no banco (ou fallback local).
+4. Dashboard consome dados e gera relatórios.
 
 ---
 
