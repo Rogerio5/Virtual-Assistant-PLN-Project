@@ -26,8 +26,8 @@ Projeto em Construção !!
 - [🌐 Acesso / Access](#-acesso--access)  
 - [🧰 Tecnologias / Technologies](#-tecnologias--technologies)  
 - [📊 Diagrama ASCII da Arquitetura](#-diagrama-ascii-da-arquitetura)  
-- [🔄 Fluxo de Requisição](#-fluxo-de-requisição)  
-- [🏗️ Arquitetura do sistema](#-arquitetura-do-sistema)  
+- [🔄 Fluxo de Requisição](#-fluxo-de-requisição)
+- [📝 Fluxo de Feedbacks](#-fluxo-de-Feedbacks)  
 - [⚙️ Configuração do backend/config.py](#-configuração-do-backendconfigpy)  
 - [👨‍💻 Desenvolvedor / Developer](#-desenvolvedor--developer)  
 - [📜 Licença / License](#-licença--license)  
@@ -43,7 +43,8 @@ Projeto em Construção !!
 - [🌐 Acesso / Access](#-acesso--access)  
 - [🧰 Tecnologias / Technologies](#-tecnologias--technologies)  
 - [📊 Diagrama ASCII da Arquitetura](#-diagrama-ascii-da-arquitetura)  
-- [🔄 Fluxo de Requisição](#-fluxo-de-requisição)  
+- [🔄 Fluxo de Requisição](#-fluxo-de-requisição)
+- [📝 Fluxo de Feedbacks](#-fluxo-de-Feedbacks)
 - [⚙️ Configuração do backend/config.py](#-configuração-do-backendconfigpy)  
 - [👨‍💻 Desenvolvedor / Developer](#-desenvolvedor--developer)  
 - [📜 Licença / License](#-licença--license)
@@ -139,7 +140,7 @@ The system was built from scratch using libraries covered in the course, and mee
 ---
 
 ## 📊 Diagrama ASCII da Arquitetura
-
+```
 +-------------------+        +-------------------+        +-------------------+
 |                   |        |                   |        |                   |
 |   Frontend        | -----> |   Backend         | -----> |   Banco de Dados  |
@@ -155,7 +156,7 @@ The system was built from scratch using libraries covered in the course, and mee
 |   (Streamlit)     |
 |                   |
 +-------------------+
-
+```
 Fluxo:
 1. Usuário interage via Frontend (texto ou áudio).
 2. Backend processa entrada (NLP, Whisper, TTS, comandos).
@@ -165,7 +166,7 @@ Fluxo:
 ---
 
 ## 🔄 Fluxo de Requisição
-
+```
 Usuário (Texto/Áudio)
         |
         v
@@ -211,11 +212,13 @@ Resposta (Texto + Áudio)
 |   Exibe resposta  |
 |   Reproduz áudio  |
 +-------------------+
-
+```
 Feedbacks → Banco de Dados (PostgreSQL) → Dashboard (Streamlit)
 
-# 📝 Fluxo de Feedbacks
+---
 
+## 📝 Fluxo de Feedbacks
+```
 Usuário envia feedback (mensagem + rating)
         |
         v
@@ -258,6 +261,7 @@ Fluxo:
 2. Backend recebe e valida entrada.
 3. Feedback Manager salva no banco (ou fallback local).
 4. Dashboard consome dados e gera relatórios.
+```
 
 ---
 
