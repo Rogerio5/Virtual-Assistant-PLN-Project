@@ -18,23 +18,6 @@ Projeto em Construção !!
 
 ---
 
-## 📋 Índice / Table of Contents (completo)
-
-- [📖 Descrição / Description](#-descrição--description)  
-- [⚙️ Funcionalidades / Features](#-funcionalidades--features)  
-- [🚀 Execução / Execution](#-execução--execution)  
-- [🌐 Acesso / Access](#-acesso--access)  
-- [🧰 Tecnologias / Technologies](#-tecnologias--technologies)  
-- [📊 Diagrama ASCII da Arquitetura](#-diagrama-ascii-da-arquitetura)  
-- [🔄 Fluxo de Requisição](#-fluxo-de-requisição)
-- [📝 Fluxo de Feedbacks](#-fluxo-de-Feedbacks)  
-- [⚙️ Configuração do backend/config.py](#-configuração-do-backendconfigpy)  
-- [👨‍💻 Desenvolvedor / Developer](#-desenvolvedor--developer)  
-- [📜 Licença / License](#-licença--license)  
-- [🏁 Conclusão / Conclusion](#-conclusão--conclusion)
-
----
-
 ## 📋 Índice / Table of Contents (reduzido)
 
 - [📖 Descrição / Description](#-descrição--description)  
