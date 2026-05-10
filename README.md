@@ -1,6 +1,4 @@
-# 🤖 Virtual Assistant System — Repositório: Virtual-Assistant-PLN-Project
-
-## 🧠 Sistema de Assistência Virtual com Processamento de Linguagem Natural (PLN)
+# 🤖 Virtual Assistant System - 🧠 Sistema de Assistência Virtual com Processamento de Linguagem Natural (PLN)
 
 Projeto em Construção !!
 
